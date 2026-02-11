@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EvolveWell
+
+EvolveWell is a responsive web prototype that connects athletes with trainers. Athletes can browse or open a trainer via share link or QR code, reserve sessions, message, track progress, and buy self-guided programs. Trainers set their own rates, earn ratings, and use the platform via membership.
+
+## Features
+
+### For Athletes
+- **Browse Trainers** - Discover certified trainers with different specialties
+- **Book Sessions** - Reserve 1-on-1 training sessions with flexible time slots
+- **Training Programs** - Purchase self-guided programs to follow at your own pace
+- **Group Classes** - Join group fitness classes led by certified trainers
+- **Messaging** - Direct communication with trainers
+- **Progress Tracking** - Monitor your fitness journey through your dashboard
+- **Shop** - Browse and purchase fitness equipment and supplements
+
+### For Trainers
+- **Profile Management** - Showcase your expertise, certifications, and rates
+- **QR Code Sharing** - Generate QR codes for easy profile sharing
+- **Booking Management** - Manage client sessions and availability
+- **Earnings Tracking** - View revenue and client statistics
+- **Membership Tiers** - Access tools based on membership level (Basic, Premium, Elite)
+- **Gated Tools** - Advanced features for higher-tier memberships
+
+## Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 4
+- **Icons**: lucide-react
+- **QR Codes**: qrcode.react
+
+## Pages
+
+- `/` - Landing page with hero and features
+- `/trainers` - Browse all trainers
+- `/trainers/[id]` - Trainer profile with booking, share, and QR code
+- `/book/[trainerId]` - Booking flow (slot selection → checkout → confirmation)
+- `/messages` - Messaging interface
+- `/dashboard/athlete` - Athlete dashboard
+- `/dashboard/trainer` - Trainer dashboard with membership tools
+- `/programs` - Browse training programs
+- `/programs/[id]` - Program details and purchase
+- `/classes` - Group fitness classes
+- `/shop` - Equipment and supplement store
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+EvolveWell/
+├── app/                      # Next.js App Router pages
+│   ├── book/[trainerId]/    # Booking flow
+│   ├── classes/             # Group classes
+│   ├── dashboard/           # User dashboards
+│   │   ├── athlete/        # Athlete dashboard
+│   │   └── trainer/        # Trainer dashboard
+│   ├── messages/            # Messaging system
+│   ├── programs/            # Training programs
+│   │   └── [id]/           # Program details
+│   ├── shop/                # Shop page
+│   ├── trainers/            # Trainers
+│   │   └── [id]/           # Trainer profile
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Landing page
+├── components/              # Reusable components
+│   ├── Navigation.tsx      # Main navigation
+│   ├── ReviewForm.tsx      # Review submission
+│   └── StarRating.tsx      # Star rating display
+├── lib/                     # Utilities and data
+│   ├── data/               # Mock data
+│   │   ├── trainers.ts    # Trainer data
+│   │   ├── programs.ts    # Program data
+│   │   ├── classes.ts     # Class data
+│   │   ├── products.ts    # Shop products
+│   │   └── reviews.ts     # Review data
+│   └── utils/              # Utility functions
+│       ├── storage.ts     # localStorage management
+│       └── format.ts      # Formatting helpers
+└── public/                  # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data Persistence
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application uses `localStorage` for client-side data persistence:
 
-## Deploy on Vercel
+- **User Role** - Athlete or Trainer view
+- **Bookings** - Training session reservations
+- **Program Purchases** - Purchased programs and progress
+- **Class Enrollments** - Enrolled group classes
+- **Messages** - Conversation history
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Membership Tiers
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Trainers have access to different tools based on their membership:
+
+### Basic
+- Schedule Management
+- Basic Analytics
+
+### Premium (includes Basic)
+- Advanced Analytics
+- Client Progress Tracking
+- Custom Programs
+
+### Elite (includes Premium)
+- Video Consultation Tools
+- Revenue Forecasting
+
+## Responsive Design
+
+The application is fully responsive with:
+- Desktop navigation with icons and labels
+- Mobile bottom navigation bar
+- Adaptive grid layouts
+- Touch-friendly interfaces
+
+## Development Notes
+
+This is a prototype using mock data and localStorage. For production use, consider:
+- Backend API integration
+- Real authentication system
+- Payment gateway integration
+- Database for data persistence
+- Real-time messaging with WebSockets
+- Image optimization and CDN
+- Testing suite (Jest, Playwright)
+
+## License
+
+This project is for demonstration purposes.
