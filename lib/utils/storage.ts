@@ -50,7 +50,7 @@ export function getCurrentUserId(): string {
   if (typeof window === 'undefined') return 'user-1';
   let userId = localStorage.getItem('currentUserId');
   if (!userId) {
-    userId = 'user-' + Math.random().toString(36).substr(2, 9);
+    userId = 'user-' + Math.random().toString(36).slice(2, 11);
     localStorage.setItem('currentUserId', userId);
   }
   return userId;
@@ -67,7 +67,7 @@ export function addBooking(booking: Omit<Booking, 'id' | 'createdAt'>): Booking 
   const bookings = getBookings();
   const newBooking: Booking = {
     ...booking,
-    id: 'booking-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+    id: 'booking-' + Date.now() + '-' + Math.random().toString(36).slice(2, 11),
     createdAt: new Date().toISOString(),
   };
   bookings.push(newBooking);
@@ -100,7 +100,7 @@ export function addMessage(message: Omit<Message, 'id' | 'timestamp'>): Message 
   const messages = getMessages();
   const newMessage: Message = {
     ...message,
-    id: 'msg-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+    id: 'msg-' + Date.now() + '-' + Math.random().toString(36).slice(2, 11),
     timestamp: new Date().toISOString(),
   };
   messages.push(newMessage);
@@ -133,7 +133,7 @@ export function addProgramPurchase(purchase: Omit<ProgramPurchase, 'id' | 'purch
   const purchases = getProgramPurchases();
   const newPurchase: ProgramPurchase = {
     ...purchase,
-    id: 'purchase-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+    id: 'purchase-' + Date.now() + '-' + Math.random().toString(36).slice(2, 11),
     purchasedAt: new Date().toISOString(),
   };
   purchases.push(newPurchase);
@@ -166,7 +166,7 @@ export function addClassEnrollment(enrollment: Omit<ClassEnrollment, 'id' | 'enr
   const enrollments = getClassEnrollments();
   const newEnrollment: ClassEnrollment = {
     ...enrollment,
-    id: 'enrollment-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+    id: 'enrollment-' + Date.now() + '-' + Math.random().toString(36).slice(2, 11),
     enrolledAt: new Date().toISOString(),
   };
   enrollments.push(newEnrollment);
