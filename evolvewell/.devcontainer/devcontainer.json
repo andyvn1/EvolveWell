@@ -1,7 +1,8 @@
 {
   "name": "EvolveWell",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "cd evolvewell && npm install",
+  "postAttachCommand": "cd evolvewell && npm run dev",
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
