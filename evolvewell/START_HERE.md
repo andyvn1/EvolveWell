@@ -1,36 +1,34 @@
 # EvolveWell Prototype - Getting Started
 
-## Setup Checklist
+## Running in GitHub Codespaces (Recommended)
 
-- [ ] Navigate to the project folder: `c:\Users\andy-\EvolveWell\EvolveWell\evolvewell`
-- [ ] Install dependencies: `npm install`
-- [ ] Start the dev server: `npm run dev`
-- [ ] Open browser: **http://localhost:3000**
-- [ ] Server should show "Ready in ~2s" message
-- [ ] Landing page loads with all sections visible
+### Step 1: Open the Codespace
+1. Go to the GitHub repository page
+2. Click the green **"<> Code"** button
+3. Click the **"Codespaces"** tab
+4. Click **"Create codespace on main"**
+5. Wait for the Codespace to load (this takes about 1-2 minutes the first time)
 
----
+### Step 2: The App Should Start Automatically
+- Dependencies install automatically when the Codespace opens
+- The dev server starts right after
+- A popup will appear saying **"Your application running on port 3000 is available"** — click **"Open in Browser"**
+- If the popup disappears, click the **PORTS** tab at the bottom of the screen, then click the globe icon next to port 3000
 
-## Quick Start (2 minutes)
-
+### Step 3: If the App Did NOT Start Automatically
+Open the terminal in Codespaces (it should already be open at the bottom) and run:
 ```bash
-cd c:\Users\andy-\EvolveWell\EvolveWell\evolvewell
-npm install
-npm run dev
+bash setup.sh
 ```
+This will install everything and start the server. Once you see **"Ready"** in the terminal, click the link or use the PORTS tab to open the app.
 
-Then open: **http://localhost:3000**
+### Step 4: Explore the Prototype
+The app opens in a new browser tab. You can now interact with the full prototype — see the **"What to Try"** section below for a walkthrough.
 
----
-
-## Essential Commands
-
-```bash
-npm run dev          # Start the server
-npm run build        # Build for production
-npm start            # Run production build
-Ctrl + C             # Stop the server
-```
+### Stopping and Restarting
+- To **stop** the server: press `Ctrl + C` in the terminal
+- To **restart** the server: type `npm run dev` in the terminal
+- Your Codespace stays available for ~30 days of inactivity
 
 ---
 
@@ -84,14 +82,18 @@ Ctrl + C             # Stop the server
 
 ---
 
-## Project Structure
+## Key Features Demonstrated
 
-```
-app/                    # All pages (landing, trainers, programs, etc.)
-components/            # Reusable UI components (Navbar, Footer, TrainerCard, etc.)
-lib/mockData.ts       # All mock data (trainers, programs, classes, products)
-package.json          # Project config
-```
+- Trainer discovery with search/filter
+- Trainer profiles with QR code sharing
+- 3-step booking flow (select time, checkout, confirmation)
+- Self-guided programs marketplace
+- Progress tracking dashboard with charts
+- Mock messaging system
+- Group classes with capacity tracking
+- Equipment shop
+- Role-based dashboards (athlete vs trainer)
+- Responsive mobile design
 
 ---
 
@@ -111,19 +113,11 @@ npm run dev -- -p 3001
 
 ---
 
-## Key Features Demonstrated
+## Project Structure
 
-✅ Trainer discovery with search/filter  
-✅ Trainer profiles with QR code sharing  
-✅ 3-step booking flow (select time → checkout → confirmation)  
-✅ Self-guided programs marketplace  
-✅ Progress tracking dashboard with charts  
-✅ Mock messaging system  
-✅ Group classes with capacity tracking  
-✅ Equipment shop  
-✅ Role-based dashboards (athlete vs trainer)  
-✅ Responsive mobile design  
-
----
-
-That's it! The prototype is fully functional and ready to explore. 🚀
+```
+app/                    # All pages (landing, trainers, programs, etc.)
+components/            # Reusable UI components (Navbar, Footer, TrainerCard, etc.)
+lib/mockData.ts       # All mock data (trainers, programs, classes, products)
+package.json          # Project config
+```
