@@ -3,9 +3,6 @@
 # Run this if the app didn't start automatically:
 #   bash setup.sh
 
-echo "Navigating to project folder..."
-cd evolvewell
-
 echo "Installing dependencies..."
 npm install
 
