@@ -55,14 +55,9 @@ export default function TrainerCard({ trainer }: { trainer: Trainer }) {
           </div>
 
           {/* View Profile Button */}
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-            className="mt-4 block w-full rounded-lg bg-lime-500 py-2 text-center font-semibold text-white hover:bg-lime-600 transition-colors"
-          >
+          <div className="mt-4 block w-full rounded-lg bg-lime-500 py-2 text-center font-semibold text-white hover:bg-lime-600 transition-colors">
             View Profile
-          </button>
+          </div>
         </div>
       </div>
     </Link>

@@ -91,7 +91,7 @@ export default function AthleteDashboard() {
               const trainer = trainers.find((t) => t.id === booking.trainerId);
               if (!trainer) return null;
               return (
-                <div key={booking.id} className="flex items-center p-4 border rounded-lg hover:bg-gray-50">
+                <Link key={booking.id} href={`/trainers/${trainer.id}`} className="flex items-center p-4 border rounded-lg hover:bg-gray-50">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4">
                     <Image src={trainer.imageUrl} alt={trainer.name} fill className="object-cover" />
                   </div>
@@ -105,7 +105,7 @@ export default function AthleteDashboard() {
                       Confirmed
                     </span>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
