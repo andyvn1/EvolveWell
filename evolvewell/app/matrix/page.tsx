@@ -110,8 +110,8 @@ export default function MatrixOrg() {
                         onMouseEnter={() => setHovered(key)}
                         onMouseLeave={() => setHovered(null)}
                         style={{
-                          background: isOwner ? col.color : "#1a1d26",
-                          border: isOwner ? `2px solid #ffd540` : hovered === key ? `1px solid ${col.color}` : "1px solid #2a2d3a",
+                          background: isOwner ? col.color : "#252836",
+                          border: isOwner ? `2px solid #ffd540` : hovered === key ? `1px solid ${col.color}` : "1px solid #3a3f52",
                           borderRadius: 6,
                           padding: isOwner ? "14px 12px" : "12px 10px",
                           minHeight: 88,
@@ -131,7 +131,7 @@ export default function MatrixOrg() {
                           </>
                         ) : (
                           cell.items?.map((item, i) => (
-                            <span key={i} style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: hovered === key ? "#ccc" : "#777", lineHeight: 1.6, transition: "color 0.18s" }}>{item}</span>
+                            <span key={i} style={{ fontFamily: "'Space Mono', monospace", fontSize: 10, color: hovered === key ? "#fff" : "#b0b8cc", lineHeight: 1.6, transition: "color 0.18s" }}>{item}</span>
                           ))
                         )}
                       </div>
