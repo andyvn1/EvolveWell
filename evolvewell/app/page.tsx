@@ -48,16 +48,11 @@ export default function Home() {
       <main className="w-full">
         {/* HERO SECTION */}
         <section className="relative overflow-hidden px-4 py-20 text-white sm:py-32">
-          {/* Video Background */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 h-full w-full object-cover"
-          >
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-man-exercising-on-gym-equipment-5401-large.mp4" type="video/mp4" />
-          </video>
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&fit=crop&auto=format')" }}
+          />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/55" />
           {/* Content */}
