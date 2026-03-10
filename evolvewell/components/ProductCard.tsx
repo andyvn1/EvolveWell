@@ -20,7 +20,9 @@ export default function ProductCard({ product }: { product: Product }) {
           src={product.imageUrl}
           alt={product.name}
           fill
+          sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover"
+          unoptimized
         />
       </div>
 

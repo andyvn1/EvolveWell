@@ -182,7 +182,7 @@ export const programs = [
     description: "Learn the foundations of yoga with guided sequences designed for beginners.",
     price: 29.99,
     duration: "4 weeks",
-    imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop&auto=format",
     lessons: [
       { title: "Introduction to Yoga", content: "Learn the basics of breathing and alignment." },
       { title: "Foundation Poses", content: "Master essential poses for your practice." },
@@ -197,7 +197,7 @@ export const programs = [
     description: "Strengthen your core with targeted Pilates exercises and techniques.",
     price: 34.99,
     duration: "6 weeks",
-    imageUrl: "https://images.unsplash.com/photo-1518611505868-48f4f9f9dc66?w=400&h=300&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&h=300&fit=crop&auto=format",
     lessons: [
       { title: "Pilates Fundamentals", content: "Understand the core principles of Pilates." },
       { title: "Mat Work", content: "Essential exercises on the Pilates mat." },
@@ -214,7 +214,7 @@ export const programs = [
     description: "A complete program to build muscle mass with progressive resistance training.",
     price: 49.99,
     duration: "12 weeks",
-    imageUrl: "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=400&h=300&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&h=300&fit=crop&auto=format",
     lessons: [
       { title: "Nutrition for Growth", content: "Eat for muscle building success." },
       { title: "Chest & Triceps", content: "Build upper body strength and size." },
@@ -237,7 +237,7 @@ export const programs = [
     description: "Build endurance and strength with this comprehensive program for runners and cyclists.",
     price: 39.99,
     duration: "8 weeks",
-    imageUrl: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=300&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&h=300&fit=crop&auto=format",
     lessons: [
       { title: "Aerobic Foundation", content: "Build your aerobic base safely." },
       { title: "Running Form", content: "Perfect your running mechanics." },
@@ -256,7 +256,7 @@ export const programs = [
     description: "High-intensity interval training to boost metabolism and build lean muscle.",
     price: 24.99,
     duration: "4 weeks",
-    imageUrl: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=400&h=300&fit=crop&auto=format",
     lessons: [
       { title: "HIIT Fundamentals", content: "Learn the science behind high-intensity intervals." },
       { title: "Cardio Burners", content: "Intense cardio-focused workouts." },
@@ -271,7 +271,7 @@ export const programs = [
     description: "Start your strength journey with fundamental exercises and form coaching.",
     price: 19.99,
     duration: "4 weeks",
-    imageUrl: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=300&fit=crop&auto=format",
     lessons: [
       { title: "Getting Started", content: "Prepare your body and mindset." },
       { title: "Basic Movement Patterns", content: "Master fundamental exercises." },
@@ -282,12 +282,12 @@ export const programs = [
 ];
 
 export const products = [
-  { id: "1", name: "Adjustable Dumbbells (5-25 lbs)", price: 149.99, description: "Perfect for home workouts. Adjustable from 5 to 25 pounds.", imageUrl: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop", category: "Weights" },
-  { id: "2", name: "Yoga Mat Pro", price: 59.99, description: "Premium non-slip yoga mat with alignment markers.", imageUrl: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop", category: "Yoga" },
-  { id: "3", name: "Resistance Band Set", price: 29.99, description: "5-piece set with varying resistance levels.", imageUrl: "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=400&h=300&fit=crop", category: "Accessories" },
-  { id: "4", name: "Foam Roller", price: 39.99, description: "High-density foam roller for recovery and mobility.", imageUrl: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=400&h=300&fit=crop", category: "Recovery" },
-  { id: "5", name: "Pull-Up Bar", price: 44.99, description: "Heavy-duty pull-up bar for doorway installation.", imageUrl: "https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?w=400&h=300&fit=crop", category: "Weights" },
-  { id: "6", name: "Kettlebell (20 lbs)", price: 49.99, description: "Cast iron kettlebell for functional strength training.", imageUrl: "https://images.unsplash.com/photo-1517963628607-235ccdd5476c?w=400&h=300&fit=crop", category: "Weights" },
+  { id: "1", name: "Adjustable Dumbbells (5-25 lbs)", price: 149.99, description: "Perfect for home workouts. Adjustable from 5 to 25 pounds.", imageUrl: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop&auto=format", category: "Weights" },
+  { id: "2", name: "Yoga Mat Pro", price: 59.99, description: "Premium non-slip yoga mat with alignment markers.", imageUrl: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop&auto=format", category: "Yoga" },
+  { id: "3", name: "Resistance Band Set", price: 29.99, description: "5-piece set with varying resistance levels.", imageUrl: "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=400&h=300&fit=crop&auto=format", category: "Accessories" },
+  { id: "4", name: "Foam Roller", price: 39.99, description: "High-density foam roller for recovery and mobility.", imageUrl: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=400&h=300&fit=crop&auto=format", category: "Recovery" },
+  { id: "5", name: "Pull-Up Bar", price: 44.99, description: "Heavy-duty pull-up bar for doorway installation.", imageUrl: "https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?w=400&h=300&fit=crop&auto=format", category: "Weights" },
+  { id: "6", name: "Kettlebell (20 lbs)", price: 49.99, description: "Cast iron kettlebell for functional strength training.", imageUrl: "https://images.unsplash.com/photo-1517963628607-235ccdd5476c?w=400&h=300&fit=crop&auto=format", category: "Weights" },
 ];
 
 export const testimonials = [

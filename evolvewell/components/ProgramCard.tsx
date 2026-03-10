@@ -23,7 +23,9 @@ export default function ProgramCard({ program }: { program: Program }) {
           src={program.imageUrl}
           alt={program.title}
           fill
+          sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover"
+          unoptimized
         />
         {program.isLimited && (
           <div className="absolute right-3 top-3 rounded-full bg-red-500 px-3 py-1 text-xs font-bold text-white">
