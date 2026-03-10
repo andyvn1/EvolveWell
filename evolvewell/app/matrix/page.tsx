@@ -146,11 +146,11 @@ export default function MatrixOrg() {
         <div style={{ display: "flex", gap: 28, marginTop: 20, justifyContent: "center", alignItems: "center" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <div style={{ width: 16, height: 16, borderRadius: 3, background: "#1a6b8a", border: "2px solid #ffd540" }} />
-            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#666", letterSpacing: 1 }}>STREAM OWNER — manages direct report</span>
+            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#aaa", letterSpacing: 1 }}>Owns & leads this revenue stream</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <div style={{ width: 16, height: 16, borderRadius: 3, background: "#1a1d26", border: "1px solid #2a2d3a" }} />
-            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#666", letterSpacing: 1 }}>FUNCTIONAL CONTRIBUTION</span>
+            <div style={{ width: 16, height: 16, borderRadius: 3, background: "#252836", border: "1px solid #3a3f52" }} />
+            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#aaa", letterSpacing: 1 }}>Supports but does not own</span>
           </div>
         </div>
       </div>
