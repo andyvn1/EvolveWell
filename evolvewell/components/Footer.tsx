@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -10,7 +12,9 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 text-xl font-bold text-black">
-              <div className="h-6 w-6 rounded-full bg-gradient-to-br from-lime-500 to-lime-700" />
+              <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-300">
+                <Image src="/logo.png" alt="EvolveWell Logo" width={40} height={40} className="object-cover" />
+              </div>
               <span>EvolveWell</span>
             </div>
             <p className="mt-2 text-sm text-gray-600">
