@@ -56,7 +56,7 @@ export default function Home() {
             playsInline
             className="absolute inset-0 h-full w-full object-cover"
           >
-            <source src="https://videos.pexels.com/video-files/3764570/3764570-hd_1920_1080_30fps.mp4" type="video/mp4" />
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-man-exercising-on-gym-equipment-5401-large.mp4" type="video/mp4" />
           </video>
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/55" />
