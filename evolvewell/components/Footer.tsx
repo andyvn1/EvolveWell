@@ -12,8 +12,8 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 text-xl font-bold text-black">
-              <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-300">
-                <Image src="/logo.png" alt="EvolveWell Logo" width={40} height={40} className="object-cover" />
+              <div className="h-14 w-14 overflow-hidden rounded-full border border-gray-300">
+                <Image src="/logo.png" alt="EvolveWell Logo" width={56} height={56} className="object-cover" />
               </div>
               <span>EvolveWell</span>
             </div>
