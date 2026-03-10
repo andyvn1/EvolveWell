@@ -47,8 +47,21 @@ export default function Home() {
       <Navbar />
       <main className="w-full">
         {/* HERO SECTION */}
-        <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 px-4 py-20 text-white sm:py-32">
-          <div className="mx-auto max-w-7xl text-center">
+        <section className="relative overflow-hidden px-4 py-20 text-white sm:py-32">
+          {/* Video Background */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/55" />
+          {/* Content */}
+          <div className="relative z-10 mx-auto max-w-7xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
               Stronger
               <br />
@@ -60,7 +73,7 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <a
                 href="#trainers"
-                className="rounded-full bg-white px-8 py-3 font-semibold text-blue-900 hover:bg-gray-100 transition-colors"
+                className="rounded-full bg-white px-8 py-3 font-semibold text-gray-900 hover:bg-gray-100 transition-colors"
               >
                 Learn More
               </a>
