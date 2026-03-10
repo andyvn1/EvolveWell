@@ -77,7 +77,7 @@ export default function Home() {
         {/* MISSION SECTION */}
         <section className="bg-white px-4 py-16 sm:py-20">
           <div className="mx-auto max-w-7xl">
-            <div className="rounded-lg border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-purple-50 p-8 text-center sm:p-12">
+            <div className="rounded-lg border-2 border-green-200 bg-gradient-to-br from-blue-50 to-purple-50 p-8 text-center sm:p-12">
               <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
               <p className="mt-4 text-lg text-gray-700 italic">
                 Stop guessing with one-size-fits-all AI workouts. Get expert trainers who listen, adjust your plan, and help you stay consistent with progress tracking.
@@ -108,7 +108,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <div className="flex items-center justify-between">
               <h2 className="text-3xl font-bold text-gray-900">Meet Our Trainers</h2>
-              <Link href="/trainers" className="font-semibold text-blue-600 hover:text-blue-700">
+              <Link href="/trainers" className="font-semibold text-green-600 hover:text-green-700">
                 Meet more trainers →
               </Link>
             </div>
@@ -133,25 +133,25 @@ export default function Home() {
                 </p>
                 <ul className="mt-6 space-y-3 text-gray-700">
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Easy trainer discovery with trust signals (ratings & reviews)</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Simple booking and direct communication</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Progress tracking and accountability</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Real human adaptation + feedback</span>
                   </li>
                 </ul>
                 <Link
                   href="/dashboard/athlete"
-                  className="mt-8 inline-block rounded-full bg-blue-600 px-8 py-3 font-semibold text-white hover:bg-blue-700 transition-colors"
+                  className="mt-8 inline-block rounded-full bg-green-600 px-8 py-3 font-semibold text-white hover:bg-green-700 transition-colors"
                 >
                   View Athlete Dashboard
                 </Link>
@@ -183,29 +183,29 @@ export default function Home() {
                 </p>
                 <ul className="mt-6 space-y-3 text-gray-700">
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Set your own hourly rate (you control pricing)</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Manage availability and bookings</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Build reputation (star ratings & reviews)</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Create and sell self-guided programs</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl text-blue-600">✓</span>
+                    <span className="text-2xl text-green-600">✓</span>
                     <span>Direct client communication and progress tracking</span>
                   </li>
                 </ul>
                 <Link
                   href="/dashboard/trainer"
-                  className="mt-8 inline-block rounded-full bg-blue-600 px-8 py-3 font-semibold text-white hover:bg-blue-700 transition-colors"
+                  className="mt-8 inline-block rounded-full bg-green-600 px-8 py-3 font-semibold text-white hover:bg-green-700 transition-colors"
                 >
                   Become a Trainer
                 </Link>
@@ -229,7 +229,7 @@ export default function Home() {
             <div className="mt-10 text-center">
               <Link
                 href="/programs"
-                className="inline-block rounded-full bg-blue-600 px-8 py-3 font-semibold text-white hover:bg-blue-700 transition-colors"
+                className="inline-block rounded-full bg-green-600 px-8 py-3 font-semibold text-white hover:bg-green-700 transition-colors"
               >
                 Browse All Programs
               </Link>
@@ -307,7 +307,7 @@ export default function Home() {
             <h2 className="text-center text-3xl font-bold text-gray-900">Our Culture & Values</h2>
 
             <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-lg bg-blue-50 p-8 text-center">
+              <div className="rounded-lg bg-green-50 p-8 text-center">
                 <h3 className="text-lg font-bold text-gray-900">Core Values</h3>
                 <ul className="mt-4 space-y-2 text-gray-700">
                   {coreValues.map((value, i) => (
@@ -323,7 +323,7 @@ export default function Home() {
                 <ul className="mt-4 space-y-2 text-gray-700">
                   {principles.map((principle, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="text-blue-600">→</span>
+                      <span className="text-green-600">→</span>
                       <span>{principle}</span>
                     </li>
                   ))}
@@ -341,14 +341,14 @@ export default function Home() {
         </section>
 
         {/* CTA SECTION */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-16 text-center text-white sm:py-20">
+        <section className="bg-gradient-to-r from-green-600 to-purple-600 px-4 py-16 text-center text-white sm:py-20">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold">Ready to evolve?</h2>
             <p className="mt-4 text-lg opacity-90">Start your transformation today.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <Link
                 href="/trainers"
-                className="rounded-full bg-white px-8 py-3 font-semibold text-blue-600 hover:bg-gray-100 transition-colors"
+                className="rounded-full bg-white px-8 py-3 font-semibold text-green-600 hover:bg-gray-100 transition-colors"
               >
                 Find a Trainer
               </Link>

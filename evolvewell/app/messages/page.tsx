@@ -98,7 +98,7 @@ export default function MessagesPage() {
                     onClick={() => setSelectedConversation(conv.id)}
                     className={`w-full border-l-4 px-4 py-4 text-left transition-colors ${
                       selectedConversation === conv.id
-                        ? 'border-l-blue-600 bg-blue-50'
+                        ? 'border-l-blue-600 bg-green-50'
                         : 'border-l-transparent hover:bg-gray-50'
                     }`}
                   >
@@ -132,7 +132,7 @@ export default function MessagesPage() {
                     <div
                       className={`max-w-xs px-4 py-2 rounded-lg ${
                         msg.isUser
-                          ? 'bg-blue-600 text-white'
+                          ? 'bg-green-600 text-white'
                           : 'bg-gray-100 text-gray-900'
                       }`}
                     >
@@ -157,11 +157,11 @@ export default function MessagesPage() {
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
                     onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                    className="flex-1 rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+                    className="flex-1 rounded-lg border border-gray-300 px-4 py-2 focus:border-green-600 focus:outline-none"
                   />
                   <button
                     onClick={handleSendMessage}
-                    className="rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700 transition-colors"
+                    className="rounded-lg bg-green-600 px-4 py-2 font-semibold text-white hover:bg-green-700 transition-colors"
                   >
                     Send
                   </button>

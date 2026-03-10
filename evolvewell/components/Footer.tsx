@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 text-xl font-bold text-black">
-              <div className="h-6 w-6 rounded-full bg-gradient-to-br from-blue-600 to-purple-600" />
+              <div className="h-6 w-6 rounded-full bg-gradient-to-br from-green-600 to-purple-600" />
               <span>EvolveWell</span>
             </div>
             <p className="mt-2 text-sm text-gray-600">

@@ -282,12 +282,12 @@ export const programs = [
 ];
 
 export const products = [
-  { id: "1", name: "Adjustable Dumbbells (5-25 lbs)", price: 149.99, description: "Perfect for home workouts. Adjustable from 5 to 25 pounds.", imageUrl: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop", category: "Weights" },
-  { id: "2", name: "Yoga Mat Pro", price: 59.99, description: "Premium non-slip yoga mat with alignment markers.", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop", category: "Yoga" },
-  { id: "3", name: "Resistance Band Set", price: 29.99, description: "5-piece set with varying resistance levels.", imageUrl: "https://images.unsplash.com/photo-1518611505868-48f4f9f9dc66?w=400&h=300&fit=crop", category: "Accessories" },
-  { id: "4", name: "Foam Roller", price: 39.99, description: "High-density foam roller for recovery and mobility.", imageUrl: "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=400&h=300&fit=crop", category: "Recovery" },
-  { id: "5", name: "Pull-Up Bar", price: 44.99, description: "Heavy-duty pull-up bar for doorway installation.", imageUrl: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=300&fit=crop", category: "Weights" },
-  { id: "6", name: "Kettlebell (20 lbs)", price: 49.99, description: "Cast iron kettlebell for functional strength training.", imageUrl: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop", category: "Weights" },
+  { id: "1", name: "Adjustable Dumbbells (5-25 lbs)", price: 149.99, description: "Perfect for home workouts. Adjustable from 5 to 25 pounds.", imageUrl: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop", category: "Weights" },
+  { id: "2", name: "Yoga Mat Pro", price: 59.99, description: "Premium non-slip yoga mat with alignment markers.", imageUrl: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop", category: "Yoga" },
+  { id: "3", name: "Resistance Band Set", price: 29.99, description: "5-piece set with varying resistance levels.", imageUrl: "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=400&h=300&fit=crop", category: "Accessories" },
+  { id: "4", name: "Foam Roller", price: 39.99, description: "High-density foam roller for recovery and mobility.", imageUrl: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=400&h=300&fit=crop", category: "Recovery" },
+  { id: "5", name: "Pull-Up Bar", price: 44.99, description: "Heavy-duty pull-up bar for doorway installation.", imageUrl: "https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?w=400&h=300&fit=crop", category: "Weights" },
+  { id: "6", name: "Kettlebell (20 lbs)", price: 49.99, description: "Cast iron kettlebell for functional strength training.", imageUrl: "https://images.unsplash.com/photo-1517963628607-235ccdd5476c?w=400&h=300&fit=crop", category: "Weights" },
 ];
 
 export const testimonials = [

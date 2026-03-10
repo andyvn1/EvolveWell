@@ -54,7 +54,7 @@ export default function ProgramDetail({ params }: { params: Promise<{ id: string
       <main className="w-full">
         {/* Hero */}
         {step === 'detail' && (
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-12 text-white sm:py-16">
+          <div className="bg-gradient-to-r from-green-600 to-purple-600 px-4 py-12 text-white sm:py-16">
             <div className="mx-auto max-w-7xl">
               <Link href="/programs" className="inline-flex items-center gap-2 text-sm opacity-90 hover:opacity-100">
                 ← Back to Programs
@@ -94,7 +94,7 @@ export default function ProgramDetail({ params }: { params: Promise<{ id: string
                       <h2 className="text-2xl font-bold text-gray-900">What You'll Learn</h2>
                       <ul className="mt-6 space-y-4">
                         {program.lessons.map((lesson, i) => (
-                          <li key={i} className="border-l-4 border-blue-600 pl-4">
+                          <li key={i} className="border-l-4 border-green-600 pl-4">
                             <h3 className="font-semibold text-gray-900">{lesson.title}</h3>
                             <p className="mt-1 text-gray-600">{lesson.content}</p>
                           </li>
@@ -116,7 +116,7 @@ export default function ProgramDetail({ params }: { params: Promise<{ id: string
                           </div>
                           <Link
                             href={`/programs/${id}/access`}
-                            className="mt-4 block w-full rounded-lg bg-blue-600 py-3 text-center font-semibold text-white hover:bg-blue-700 transition-colors"
+                            className="mt-4 block w-full rounded-lg bg-green-600 py-3 text-center font-semibold text-white hover:bg-green-700 transition-colors"
                           >
                             Access Program
                           </Link>
@@ -124,7 +124,7 @@ export default function ProgramDetail({ params }: { params: Promise<{ id: string
                       ) : (
                         <button
                           onClick={handlePurchase}
-                          className="mt-6 w-full rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 transition-colors"
+                          className="mt-6 w-full rounded-lg bg-green-600 py-3 font-semibold text-white hover:bg-green-700 transition-colors"
                         >
                           Purchase Now
                         </button>
@@ -165,23 +165,23 @@ export default function ProgramDetail({ params }: { params: Promise<{ id: string
                     <input
                       type="email"
                       placeholder="Email"
-                      className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                      className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                     />
                     <input
                       type="text"
                       placeholder="Card Number"
-                      className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                      className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                     />
                     <div className="grid grid-cols-2 gap-4">
                       <input
                         type="text"
                         placeholder="MM/YY"
-                        className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                        className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                       />
                       <input
                         type="text"
                         placeholder="CVC"
-                        className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                        className="w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                       />
                     </div>
                   </div>
@@ -195,7 +195,7 @@ export default function ProgramDetail({ params }: { params: Promise<{ id: string
                     </button>
                     <button
                       onClick={handlePayment}
-                      className="flex-1 rounded-lg bg-blue-600 py-2 font-semibold text-white hover:bg-blue-700 transition-colors"
+                      className="flex-1 rounded-lg bg-green-600 py-2 font-semibold text-white hover:bg-green-700 transition-colors"
                     >
                       Pay ${program.price}
                     </button>
@@ -213,7 +213,7 @@ export default function ProgramDetail({ params }: { params: Promise<{ id: string
 
                 <Link
                   href={`/programs/${id}/access`}
-                  className="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700 transition-colors"
+                  className="mt-6 inline-block rounded-lg bg-green-600 px-6 py-3 font-semibold text-white hover:bg-green-700 transition-colors"
                 >
                   Start Learning
                 </Link>

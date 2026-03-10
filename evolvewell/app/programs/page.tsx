@@ -24,7 +24,7 @@ export default function ProgramsPage() {
       <Navbar />
       <main className="w-full">
         {/* Hero */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-12 text-white sm:py-16">
+        <section className="bg-gradient-to-r from-green-600 to-purple-600 px-4 py-12 text-white sm:py-16">
           <div className="mx-auto max-w-7xl">
             <h1 className="text-3xl font-bold sm:text-4xl">Self-Guided Programs</h1>
             <p className="mt-2 opacity-90">Expert-designed programs without personal coaching required.</p>

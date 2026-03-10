@@ -26,7 +26,7 @@ export default function ClassCard({ classItem }: { classItem: Class }) {
 
   return (
     <div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-4 text-white">
+      <div className="bg-gradient-to-r from-green-600 to-purple-600 px-6 py-4 text-white">
         <h3 className="text-lg font-bold">{classItem.name}</h3>
         <p className="mt-1 text-sm font-medium opacity-90">{classItem.time}</p>
       </div>
@@ -59,7 +59,7 @@ export default function ClassCard({ classItem }: { classItem: Class }) {
           </p>
           <div className="mt-2 h-2 rounded-full bg-gray-200">
             <div
-              className="h-full rounded-full bg-blue-600"
+              className="h-full rounded-full bg-green-600"
               style={{ width: mounted ? `${(classItem.enrolled / classItem.capacity) * 100}%` : '0%' }}
             />
           </div>
@@ -71,7 +71,7 @@ export default function ClassCard({ classItem }: { classItem: Class }) {
           className={`mt-4 block w-full rounded-lg py-2 text-center font-semibold transition-colors ${
             isFull
               ? 'cursor-not-allowed bg-gray-200 text-gray-600'
-              : 'bg-blue-600 text-white hover:bg-blue-700'
+              : 'bg-green-600 text-white hover:bg-green-700'
           }`}
         >
           {isFull ? 'Class Full' : 'Reserve Spot'}

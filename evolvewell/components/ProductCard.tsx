@@ -26,7 +26,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Content */}
       <div className="p-5">
-        <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider">{product.category}</p>
+        <p className="text-xs font-semibold text-green-600 uppercase tracking-wider">{product.category}</p>
         <h3 className="mt-2 text-base font-semibold text-gray-900">{product.name}</h3>
 
         {/* Price & CTA */}

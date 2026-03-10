@@ -34,7 +34,7 @@ export default function ProgramCard({ program }: { program: Program }) {
 
       {/* Content */}
       <div className="p-5">
-        <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider">{program.category}</p>
+        <p className="text-xs font-semibold text-green-600 uppercase tracking-wider">{program.category}</p>
         <h3 className="mt-2 text-lg font-semibold text-gray-900">{program.title}</h3>
 
         {/* Metadata */}

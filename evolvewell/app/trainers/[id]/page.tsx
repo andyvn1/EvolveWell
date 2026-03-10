@@ -30,7 +30,7 @@ export default function TrainerProfile({ params }: { params: Promise<{ id: strin
       <Navbar />
       <main className="w-full">
         {/* Hero with Image */}
-        <div className="relative h-64 w-full bg-gradient-to-r from-blue-600 to-purple-600 sm:h-80">
+        <div className="relative h-64 w-full bg-gradient-to-r from-green-600 to-purple-600 sm:h-80">
           <Image
             src={trainer.imageUrl}
             alt={trainer.name}
@@ -71,7 +71,7 @@ export default function TrainerProfile({ params }: { params: Promise<{ id: strin
                 {/* Specialties */}
                 <div className="mt-4 flex flex-wrap gap-2">
                   {trainer.specialties.map((spec, i) => (
-                    <span key={i} className="inline-block rounded-full bg-blue-100 px-4 py-1 text-sm font-medium text-blue-700">
+                    <span key={i} className="inline-block rounded-full bg-green-100 px-4 py-1 text-sm font-medium text-green-700">
                       {spec}
                     </span>
                   ))}
@@ -87,7 +87,7 @@ export default function TrainerProfile({ params }: { params: Promise<{ id: strin
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Link
                     href={`/book/${trainer.id}`}
-                    className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700 transition-colors text-center"
+                    className="rounded-lg bg-green-600 px-6 py-3 font-semibold text-white hover:bg-green-700 transition-colors text-center"
                   >
                     Reserve a Session
                   </Link>
@@ -135,7 +135,7 @@ export default function TrainerProfile({ params }: { params: Promise<{ id: strin
                   </div>
                   <Link
                     href={`/book/${trainer.id}`}
-                    className="mt-4 block rounded-lg bg-blue-600 px-4 py-2 text-center font-semibold text-white hover:bg-blue-700 transition-colors"
+                    className="mt-4 block rounded-lg bg-green-600 px-4 py-2 text-center font-semibold text-white hover:bg-green-700 transition-colors"
                   >
                     Book a Session
                   </Link>
@@ -190,7 +190,7 @@ export default function TrainerProfile({ params }: { params: Promise<{ id: strin
                   </p>
                   <Link
                     href={`/book/${trainer.id}`}
-                    className="mt-4 block rounded-lg bg-blue-600 px-4 py-2 text-center font-semibold text-white hover:bg-blue-700 transition-colors"
+                    className="mt-4 block rounded-lg bg-green-600 px-4 py-2 text-center font-semibold text-white hover:bg-green-700 transition-colors"
                   >
                     Reserve Now
                   </Link>

@@ -61,15 +61,15 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
         <div className="mx-auto max-w-3xl px-4">
           {/* Progress */}
           <div className="mb-12 flex items-center justify-center gap-4">
-            <div className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white ${step === 'time' || step === 'checkout' || step === 'confirmation' ? 'bg-blue-600' : 'bg-gray-300'}`}>
+            <div className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white ${step === 'time' || step === 'checkout' || step === 'confirmation' ? 'bg-green-600' : 'bg-gray-300'}`}>
               1
             </div>
-            <div className={`h-1 flex-1 ${step === 'checkout' || step === 'confirmation' ? 'bg-blue-600' : 'bg-gray-300'}`} />
-            <div className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white ${step === 'checkout' || step === 'confirmation' ? 'bg-blue-600' : 'bg-gray-300'}`}>
+            <div className={`h-1 flex-1 ${step === 'checkout' || step === 'confirmation' ? 'bg-green-600' : 'bg-gray-300'}`} />
+            <div className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white ${step === 'checkout' || step === 'confirmation' ? 'bg-green-600' : 'bg-gray-300'}`}>
               2
             </div>
-            <div className={`h-1 flex-1 ${step === 'confirmation' ? 'bg-blue-600' : 'bg-gray-300'}`} />
-            <div className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white ${step === 'confirmation' ? 'bg-blue-600' : 'bg-gray-300'}`}>
+            <div className={`h-1 flex-1 ${step === 'confirmation' ? 'bg-green-600' : 'bg-gray-300'}`} />
+            <div className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white ${step === 'confirmation' ? 'bg-green-600' : 'bg-gray-300'}`}>
               3
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                 <select
                   value={selectedDate}
                   onChange={(e) => setSelectedDate(e.target.value)}
-                  className="mt-3 w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                  className="mt-3 w-full rounded-lg border border-gray-300 bg-white px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                 >
                   <option value="">Select a date...</option>
                   {Array.from(new Set(trainer.availability.map((slot) => slot.date))).map((date) => (
@@ -114,7 +114,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                           onClick={() => setSelectedTime(slot.time)}
                           className={`rounded-lg py-2 font-medium transition-colors ${
                             selectedTime === slot.time
-                              ? 'bg-blue-600 text-white'
+                              ? 'bg-green-600 text-white'
                               : 'border border-gray-300 text-gray-700 hover:bg-gray-50'
                           }`}
                         >
@@ -127,7 +127,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
 
               {/* Summary */}
               {selectedDate && selectedTime && (
-                <div className="mt-8 rounded-lg bg-blue-50 p-6">
+                <div className="mt-8 rounded-lg bg-green-50 p-6">
                   <h3 className="font-semibold text-gray-900">Session Details</h3>
                   <div className="mt-3 space-y-2 text-gray-700">
                     <p>
@@ -147,7 +147,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                     <p>
                       <span className="font-semibold">Duration:</span> 1 hour
                     </p>
-                    <p className="border-t border-blue-200 pt-2 text-lg font-bold">
+                    <p className="border-t border-green-200 pt-2 text-lg font-bold">
                       <span className="font-semibold">Price:</span> ${trainer.hourlyRate}
                     </p>
                   </div>
@@ -164,7 +164,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                 <button
                   onClick={handleBooking}
                   disabled={!selectedDate || !selectedTime}
-                  className="flex-1 rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="flex-1 rounded-lg bg-green-600 py-3 font-semibold text-white hover:bg-green-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
                 >
                   Continue to Payment
                 </button>
@@ -205,7 +205,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                     <input
                       type="text"
                       placeholder="John Doe"
-                      className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                      className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                     />
                   </div>
                   <div>
@@ -213,7 +213,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                     <input
                       type="email"
                       placeholder="john@example.com"
-                      className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                      className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                     />
                   </div>
                   <div>
@@ -221,7 +221,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                     <input
                       type="text"
                       placeholder="4242 4242 4242 4242"
-                      className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                      className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                     />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
@@ -230,7 +230,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                       <input
                         type="text"
                         placeholder="MM/YY"
-                        className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                        className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                       />
                     </div>
                     <div>
@@ -238,7 +238,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                       <input
                         type="text"
                         placeholder="123"
-                        className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-blue-600 focus:outline-none"
+                        className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:border-green-600 focus:outline-none"
                       />
                     </div>
                   </div>
@@ -254,7 +254,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                 </button>
                 <button
                   onClick={handlePayment}
-                  className="flex-1 rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 transition-colors"
+                  className="flex-1 rounded-lg bg-green-600 py-3 font-semibold text-white hover:bg-green-700 transition-colors"
                 >
                   Complete Booking
                 </button>
@@ -305,7 +305,7 @@ export default function BookingPage({ params }: { params: Promise<{ trainerId: s
                 </Link>
                 <Link
                   href="/"
-                  className="flex-1 rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 transition-colors text-center"
+                  className="flex-1 rounded-lg bg-green-600 py-3 font-semibold text-white hover:bg-green-700 transition-colors text-center"
                 >
                   Back to Home
                 </Link>

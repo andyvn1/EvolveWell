@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type UserRole = 'athlete' | 'trainer' | null;
 
@@ -34,7 +35,9 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-black">
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-600 to-purple-600" />
+            <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200">
+              <Image src="/logo.png" alt="EvolveWell Logo" width={40} height={40} className="object-cover" />
+            </div>
             <span className="hidden sm:inline">EvolveWell</span>
           </Link>
 
@@ -66,7 +69,7 @@ export default function Navbar() {
                 </button>
                 <button
                   onClick={() => handleRoleChange('trainer')}
-                  className="rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+                  className="rounded-full bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
                 >
                   Trainer Login
                 </button>
@@ -78,7 +81,7 @@ export default function Navbar() {
                 </span>
                 <Link
                   href={role === 'athlete' ? '/dashboard/athlete' : '/dashboard/trainer'}
-                  className="rounded-full border border-blue-600 px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50"
+                  className="rounded-full border border-green-600 px-4 py-2 text-sm font-medium text-green-600 hover:bg-green-50"
                 >
                   Dashboard
                 </Link>
@@ -158,7 +161,7 @@ export default function Navbar() {
                       handleRoleChange('trainer');
                       setMobileMenuOpen(false);
                     }}
-                    className="rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+                    className="rounded-full bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
                   >
                     Trainer Login
                   </button>
@@ -167,7 +170,7 @@ export default function Navbar() {
                 <>
                   <Link
                     href={role === 'athlete' ? '/dashboard/athlete' : '/dashboard/trainer'}
-                    className="rounded-full border border-blue-600 px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50"
+                    className="rounded-full border border-green-600 px-4 py-2 text-sm font-medium text-green-600 hover:bg-green-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Dashboard
