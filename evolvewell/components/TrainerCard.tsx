@@ -37,7 +37,7 @@ export default function TrainerCard({ trainer }: { trainer: Trainer }) {
           {/* Specialties */}
           <div className="mt-3 flex flex-wrap gap-1">
             {trainer.specialties.slice(0, 2).map((spec, i) => (
-              <span key={i} className="inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
+              <span key={i} className="inline-block rounded-full bg-lime-100 px-3 py-1 text-xs font-medium text-lime-700">
                 {spec}
               </span>
             ))}
@@ -59,7 +59,7 @@ export default function TrainerCard({ trainer }: { trainer: Trainer }) {
             onClick={(e) => {
               e.preventDefault();
             }}
-            className="mt-4 block w-full rounded-lg bg-green-600 py-2 text-center font-semibold text-white hover:bg-green-700 transition-colors"
+            className="mt-4 block w-full rounded-lg bg-lime-500 py-2 text-center font-semibold text-white hover:bg-lime-600 transition-colors"
           >
             View Profile
           </button>

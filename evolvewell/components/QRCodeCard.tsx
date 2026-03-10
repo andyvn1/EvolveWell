@@ -36,7 +36,7 @@ export default function QRCodeCard({ url, title }: { url: string; title: string 
           link.download = `${title}-qr-code.png`;
           link.click();
         }}
-        className="mt-3 rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700 transition-colors"
+        className="mt-3 rounded-lg bg-lime-500 px-4 py-2 text-sm font-semibold text-white hover:bg-lime-600 transition-colors"
       >
         Download QR Code
       </button>

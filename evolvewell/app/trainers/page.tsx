@@ -32,7 +32,7 @@ export default function TrainersPage() {
       <Navbar />
       <main className="w-full">
         {/* Hero */}
-        <section className="bg-gradient-to-r from-green-600 to-purple-600 px-4 py-12 text-white sm:py-16">
+        <section className="bg-gradient-to-r from-lime-500 to-lime-700 px-4 py-12 text-white sm:py-16">
           <div className="mx-auto max-w-7xl">
             <h1 className="text-3xl font-bold sm:text-4xl">Find Your Coach</h1>
             <p className="mt-2 opacity-90">
@@ -51,14 +51,14 @@ export default function TrainersPage() {
                 placeholder="Search by name or specialty..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="rounded-lg border border-gray-300 px-4 py-2 text-sm text-black focus:border-green-600 focus:outline-none"
+                className="rounded-lg border border-gray-300 px-4 py-2 text-sm text-black focus:border-lime-500 focus:outline-none"
               />
 
               {/* Specialty Filter */}
               <select
                 value={selectedSpecialty}
                 onChange={(e) => setSelectedSpecialty(e.target.value)}
-                className="rounded-lg border border-gray-300 px-4 py-2 text-sm text-black focus:border-green-600 focus:outline-none"
+                className="rounded-lg border border-gray-300 px-4 py-2 text-sm text-black focus:border-lime-500 focus:outline-none"
               >
                 <option value="">All Specialties</option>
                 {allSpecialties.map((specialty) => (
@@ -75,7 +75,7 @@ export default function TrainersPage() {
                   setSearchTerm('');
                   setSelectedSpecialty('');
                 }}
-                className="mt-4 text-sm font-semibold text-green-600 hover:text-green-700"
+                className="mt-4 text-sm font-semibold text-lime-600 hover:text-lime-700"
               >
                 Clear filters
               </button>
@@ -105,7 +105,7 @@ export default function TrainersPage() {
                     setSearchTerm('');
                     setSelectedSpecialty('');
                   }}
-                  className="mt-4 text-sm font-semibold text-green-600 hover:text-green-700"
+                  className="mt-4 text-sm font-semibold text-lime-600 hover:text-lime-700"
                 >
                   Clear filters and try again
                 </button>

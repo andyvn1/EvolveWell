@@ -63,17 +63,17 @@ export default function AthleteDashboard() {
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Total Sessions</p>
                 <p className="mt-2 text-3xl font-bold text-gray-900">24</p>
-                <p className="mt-1 text-xs text-green-600">+3 this week</p>
+                <p className="mt-1 text-xs text-lime-600">+3 this week</p>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Weight Lifted</p>
                 <p className="mt-2 text-3xl font-bold text-gray-900">2,480 lbs</p>
-                <p className="mt-1 text-xs text-green-600">+240 this week</p>
+                <p className="mt-1 text-xs text-lime-600">+240 this week</p>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Consistency</p>
                 <p className="mt-2 text-3xl font-bold text-gray-900">92%</p>
-                <p className="mt-1 text-xs text-green-600">Great adherence</p>
+                <p className="mt-1 text-xs text-lime-600">Great adherence</p>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Active Coaches</p>
@@ -150,7 +150,7 @@ export default function AthleteDashboard() {
               {bookings.length > 0 ? (
                 <div className="space-y-3">
                   {bookings.slice(0, 3).map((booking, i) => (
-                    <div key={i} className="flex items-center justify-between rounded-lg bg-green-50 p-4">
+                    <div key={i} className="flex items-center justify-between rounded-lg bg-lime-50 p-4">
                       <div>
                         <p className="font-semibold text-gray-900">
                           {new Date(booking.selectedDate).toLocaleDateString('en-US', {
@@ -164,7 +164,7 @@ export default function AthleteDashboard() {
                       </div>
                       <Link
                         href="/messages"
-                        className="rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700 transition-colors"
+                        className="rounded-lg bg-lime-500 px-4 py-2 text-sm font-semibold text-white hover:bg-lime-600 transition-colors"
                       >
                         Message Trainer
                       </Link>
@@ -176,7 +176,7 @@ export default function AthleteDashboard() {
                   <p className="text-gray-600 mb-4">No upcoming sessions scheduled.</p>
                   <Link
                     href="/trainers"
-                    className="inline-block rounded-lg bg-green-600 px-6 py-2 font-semibold text-white hover:bg-green-700 transition-colors"
+                    className="inline-block rounded-lg bg-lime-500 px-6 py-2 font-semibold text-white hover:bg-lime-600 transition-colors"
                   >
                     Book a Session
                   </Link>

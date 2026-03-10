@@ -21,7 +21,7 @@ export default function ShopPage() {
       <Navbar />
       <main className="w-full">
         {/* Hero */}
-        <section className="bg-gradient-to-r from-green-600 to-purple-600 px-4 py-12 text-white sm:py-16">
+        <section className="bg-gradient-to-r from-lime-500 to-lime-700 px-4 py-12 text-white sm:py-16">
           <div className="mx-auto max-w-7xl">
             <h1 className="text-3xl font-bold sm:text-4xl">Home Gym Equipment</h1>
             <p className="mt-2 opacity-90">Build your fitness space with essential gear.</p>
@@ -46,10 +46,10 @@ export default function ShopPage() {
         })}
 
         {/* CTA */}
-        <section className="bg-green-50 px-4 py-12">
+        <section className="bg-lime-50 px-4 py-12">
           <div className="mx-auto max-w-7xl text-center">
             <p className="text-gray-600">
-              Questions? <a href="#support" className="font-semibold text-green-600 hover:text-green-700">Contact us</a>
+              Questions? <a href="#support" className="font-semibold text-lime-600 hover:text-lime-700">Contact us</a>
             </p>
           </div>
         </section>

@@ -29,17 +29,17 @@ export default function TrainerDashboard() {
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Active Clients</p>
                 <p className="mt-2 text-3xl font-bold text-gray-900">24</p>
-                <p className="mt-1 text-xs text-green-600">+3 this month</p>
+                <p className="mt-1 text-xs text-lime-600">+3 this month</p>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Monthly Revenue</p>
                 <p className="mt-2 text-3xl font-bold text-gray-900">$4,850</p>
-                <p className="mt-1 text-xs text-green-600">+$650 this week</p>
+                <p className="mt-1 text-xs text-lime-600">+$650 this week</p>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Rating</p>
                 <p className="mt-2 text-3xl font-bold text-gray-900">4.9★</p>
-                <p className="mt-1 text-xs text-green-600">47 reviews</p>
+                <p className="mt-1 text-xs text-lime-600">47 reviews</p>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-sm border border-gray-200">
                 <p className="text-sm font-medium text-gray-600">Bookings This Week</p>
@@ -62,14 +62,14 @@ export default function TrainerDashboard() {
                         type="number"
                         value={hourlyRate}
                         onChange={(e) => setHourlyRate(Number(e.target.value))}
-                        className="flex-1 rounded-lg border border-gray-300 px-3 py-2 focus:border-green-600 focus:outline-none"
+                        className="flex-1 rounded-lg border border-gray-300 px-3 py-2 focus:border-lime-500 focus:outline-none"
                       />
                       <span className="text-gray-600">/hour</span>
                     </div>
                     <p className="mt-2 text-xs text-gray-600">You keep 80%, EvolveWell takes 20%</p>
                   </div>
 
-                  <button className="w-full rounded-lg bg-green-600 py-2 font-semibold text-white hover:bg-green-700 transition-colors">
+                  <button className="w-full rounded-lg bg-lime-500 py-2 font-semibold text-white hover:bg-lime-600 transition-colors">
                     Save Changes
                   </button>
                 </div>
@@ -85,11 +85,11 @@ export default function TrainerDashboard() {
                       value={availability}
                       onChange={(e) => setAvailability(e.target.value)}
                       rows={3}
-                      className="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 focus:border-green-600 focus:outline-none"
+                      className="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 focus:border-lime-500 focus:outline-none"
                     />
                   </div>
 
-                  <button className="w-full rounded-lg bg-green-600 py-2 font-semibold text-white hover:bg-green-700 transition-colors">
+                  <button className="w-full rounded-lg bg-lime-500 py-2 font-semibold text-white hover:bg-lime-600 transition-colors">
                     Update Availability
                   </button>
                 </div>
@@ -104,7 +104,7 @@ export default function TrainerDashboard() {
               >
                 <h3 className="font-bold text-gray-900">Create Program</h3>
                 <p className="mt-2 text-sm text-gray-600">Build and sell self-guided programs to earn passive income.</p>
-                <button className="mt-4 font-semibold text-green-600 hover:text-green-700">Start Creating →</button>
+                <button className="mt-4 font-semibold text-lime-600 hover:text-lime-700">Start Creating →</button>
               </Link>
 
               <Link
@@ -113,7 +113,7 @@ export default function TrainerDashboard() {
               >
                 <h3 className="font-bold text-gray-900">Message Clients</h3>
                 <p className="mt-2 text-sm text-gray-600">Communicate with your athletes and provide coaching guidance.</p>
-                <button className="mt-4 font-semibold text-green-600 hover:text-green-700">Open Messages →</button>
+                <button className="mt-4 font-semibold text-lime-600 hover:text-lime-700">Open Messages →</button>
               </Link>
 
               <div className="rounded-lg bg-gradient-to-br from-purple-50 to-pink-50 p-6 shadow-sm border border-purple-200">
@@ -140,7 +140,7 @@ export default function TrainerDashboard() {
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="text-xs font-semibold text-gray-600">{booking.status}</span>
-                      <button className="rounded-lg bg-green-600 px-3 py-1 text-xs font-semibold text-white hover:bg-green-700 transition-colors">
+                      <button className="rounded-lg bg-lime-500 px-3 py-1 text-xs font-semibold text-white hover:bg-lime-600 transition-colors">
                         Confirm
                       </button>
                     </div>
