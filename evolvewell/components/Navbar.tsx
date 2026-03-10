@@ -30,29 +30,26 @@ export default function Navbar() {
   if (!mounted) return null;
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-[#2e3138] bg-[#3d4148] shadow-sm">
+    <nav className="sticky top-0 z-50 w-full border-b border-gray-300 bg-[#f2f2f2] shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-white">
-            <div className="h-16 w-16 overflow-hidden rounded-full border border-gray-600">
-              <Image src="/logo.png" alt="EvolveWell Logo" width={64} height={64} className="object-cover" />
-            </div>
-            <span className="hidden sm:inline">EvolveWell</span>
+          <Link href="/" className="flex items-center">
+            <Image src="/logo.png" alt="EvolveWell Logo" width={120} height={44} className="object-contain" unoptimized />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">
-            <Link href="/trainers" className="text-sm font-medium text-gray-300 hover:text-lime-400">
+            <Link href="/trainers" className="text-sm font-medium text-gray-700 hover:text-lime-600">
               Meet Trainers
             </Link>
-            <Link href="/programs" className="text-sm font-medium text-gray-300 hover:text-lime-400">
+            <Link href="/programs" className="text-sm font-medium text-gray-700 hover:text-lime-600">
               Programs
             </Link>
-            <Link href="/classes" className="text-sm font-medium text-gray-300 hover:text-lime-400">
+            <Link href="/classes" className="text-sm font-medium text-gray-700 hover:text-lime-600">
               Classes
             </Link>
-            <Link href="/shop" className="text-sm font-medium text-gray-300 hover:text-lime-400">
+            <Link href="/shop" className="text-sm font-medium text-gray-700 hover:text-lime-600">
               Equipment
             </Link>
           </div>
@@ -63,31 +60,31 @@ export default function Navbar() {
               <>
                 <button
                   onClick={() => handleRoleChange('athlete')}
-                  className="rounded-full border border-gray-500 px-4 py-2 text-sm font-medium text-gray-300 hover:bg-gray-600"
+                  className="rounded-full border border-gray-400 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
                 >
                   Sign in as Athlete
                 </button>
                 <button
                   onClick={() => handleRoleChange('trainer')}
-                  className="rounded-full bg-lime-500 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-lime-400"
+                  className="rounded-full bg-lime-500 px-4 py-2 text-sm font-medium text-white hover:bg-lime-600"
                 >
                   Trainer Login
                 </button>
               </>
             ) : (
               <>
-                <span className="text-sm font-medium text-gray-300">
+                <span className="text-sm font-medium text-gray-700">
                   {role === 'athlete' ? '🏃 Athlete' : '🏋️ Trainer'}
                 </span>
                 <Link
                   href={role === 'athlete' ? '/dashboard/athlete' : '/dashboard/trainer'}
-                  className="rounded-full border border-lime-500 px-4 py-2 text-sm font-medium text-lime-400 hover:bg-lime-500 hover:text-gray-900"
+                  className="rounded-full border border-lime-500 px-4 py-2 text-sm font-medium text-lime-600 hover:bg-lime-500 hover:text-white"
                 >
                   Dashboard
                 </Link>
                 <button
                   onClick={() => handleRoleChange(null)}
-                  className="text-sm font-medium text-gray-400 hover:text-white"
+                  className="text-sm font-medium text-gray-500 hover:text-gray-900"
                 >
                   Logout
                 </button>
@@ -98,7 +95,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-gray-700"
             aria-label="Toggle menu"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,32 +111,32 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="border-t border-gray-600 py-4 md:hidden">
+          <div className="border-t border-gray-300 py-4 md:hidden">
             <div className="flex flex-col gap-3">
-              <Link href="/trainers" className="text-sm font-medium text-gray-300 hover:text-lime-400" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/trainers" className="text-sm font-medium text-gray-700 hover:text-lime-600" onClick={() => setMobileMenuOpen(false)}>
                 Meet Trainers
               </Link>
-              <Link href="/programs" className="text-sm font-medium text-gray-300 hover:text-lime-400" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/programs" className="text-sm font-medium text-gray-700 hover:text-lime-600" onClick={() => setMobileMenuOpen(false)}>
                 Programs
               </Link>
-              <Link href="/classes" className="text-sm font-medium text-gray-300 hover:text-lime-400" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/classes" className="text-sm font-medium text-gray-700 hover:text-lime-600" onClick={() => setMobileMenuOpen(false)}>
                 Classes
               </Link>
-              <Link href="/shop" className="text-sm font-medium text-gray-300 hover:text-lime-400" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/shop" className="text-sm font-medium text-gray-700 hover:text-lime-600" onClick={() => setMobileMenuOpen(false)}>
                 Equipment
               </Link>
-              <hr className="my-2 border-gray-600" />
+              <hr className="my-2 border-gray-300" />
               {!role ? (
                 <>
                   <button
                     onClick={() => { handleRoleChange('athlete'); setMobileMenuOpen(false); }}
-                    className="rounded-full border border-gray-500 px-4 py-2 text-sm font-medium text-gray-300 hover:bg-gray-600"
+                    className="rounded-full border border-gray-400 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
                   >
                     Sign in as Athlete
                   </button>
                   <button
                     onClick={() => { handleRoleChange('trainer'); setMobileMenuOpen(false); }}
-                    className="rounded-full bg-lime-500 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-lime-400"
+                    className="rounded-full bg-lime-500 px-4 py-2 text-sm font-medium text-white hover:bg-lime-600"
                   >
                     Trainer Login
                   </button>
@@ -148,14 +145,14 @@ export default function Navbar() {
                 <>
                   <Link
                     href={role === 'athlete' ? '/dashboard/athlete' : '/dashboard/trainer'}
-                    className="rounded-full border border-lime-500 px-4 py-2 text-sm font-medium text-lime-400 hover:bg-lime-500 hover:text-gray-900"
+                    className="rounded-full border border-lime-500 px-4 py-2 text-sm font-medium text-lime-600 hover:bg-lime-500 hover:text-white"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Dashboard
                   </Link>
                   <button
                     onClick={() => { handleRoleChange(null); setMobileMenuOpen(false); }}
-                    className="text-sm font-medium text-gray-400 hover:text-white"
+                    className="text-sm font-medium text-gray-500 hover:text-gray-900"
                   >
                     Logout
                   </button>

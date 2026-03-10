@@ -11,12 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 text-xl font-bold text-black">
-              <div className="h-14 w-14 overflow-hidden rounded-full border border-gray-300">
-                <Image src="/logo.png" alt="EvolveWell Logo" width={56} height={56} className="object-cover" />
-              </div>
-              <span>EvolveWell</span>
-            </div>
+            <Image src="/logo.png" alt="EvolveWell Logo" width={120} height={48} className="object-contain" unoptimized />
             <p className="mt-2 text-sm text-gray-600">
               Your connection to expert coaching for a fitter, stronger you.
             </p>
